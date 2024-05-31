@@ -49,4 +49,4 @@ int main() {
 	cp2.set(3,4);
 	cp2.setColor("Red");
 	cout << ((cp.equals(cp2))?"true":"false");		// ¨í
-}
+} //3,4,5,6 ¿À·ù
