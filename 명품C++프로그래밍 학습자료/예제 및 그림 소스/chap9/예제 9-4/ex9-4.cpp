@@ -12,7 +12,7 @@ class Circle : public Shape {
 public:
 	int x;
 	virtual void draw() { 
-		Shape::draw(); // ±âº» Å¬·¡½ºÀÇ draw() È£Ãâ
+		Shape::draw(); // ê¸°ë³¸ í´ë˜ìŠ¤ì˜ draw() í˜¸ì¶œ
 		cout << "Circle" << endl;
 	}
 };
@@ -21,6 +21,6 @@ int main() {
 	Circle circle;
 	Shape * pShape = &circle;
 
-	pShape->draw();  // µ¿Àû ¹ÙÀÎµù ¹ß»ı. draw()´Â virtualÀÌ¹Ç·Î
-	pShape->Shape::draw(); // Á¤Àû ¹ÙÀÎµù ¹ß»ı. ¹üÀ§ÁöÁ¤¿¬»êÀÚ·Î ÀÎÇØ
+	pShape->draw();  // ë™ì  ë°”ì¸ë”© ë°œìƒ. draw()ëŠ” virtualì´ë¯€ë¡œ
+	pShape->Shape::draw(); // ì •ì  ë°”ì¸ë”© ë°œìƒ. ë²”ìœ„ì§€ì •ì—°ì‚°ìë¡œ ì¸í•´
 }

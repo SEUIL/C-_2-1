@@ -12,5 +12,5 @@ void msg(int id, string s="") {
 
 int main(){
 	msg(5, "Good Morning"); // 정상 컴파일. 두번째 msg() 호출
-	msg(6); // 함수 호출 모호. 컴파일 오류
+	// msg(6); // 함수 호출 모호. 컴파일 오류
 }

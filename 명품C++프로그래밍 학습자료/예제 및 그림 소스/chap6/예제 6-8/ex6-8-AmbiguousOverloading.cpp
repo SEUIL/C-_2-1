@@ -12,5 +12,5 @@ int add(int a, int &b) {
 
 int main(){
 	int s=10, t=20;
-	cout << add(s, t); // 컴파일 오류
+	// cout << add(s, t); // 컴파일 오류
 }

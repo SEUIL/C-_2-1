@@ -8,6 +8,7 @@ public:
 	MyVector(int n=100) { 
 		p = new int [n];
 		size = n;
+		cout << size << endl;
 	}
 	~MyVector() { delete [] p; }
 };

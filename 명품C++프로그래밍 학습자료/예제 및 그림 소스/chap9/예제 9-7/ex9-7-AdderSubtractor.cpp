@@ -1,31 +1,31 @@
-ï»¿#include <iostream>
+#include <iostream>
 using namespace std;
 
 class Calculator {
 	void input() {
-		cout << "ì •ìˆ˜ 2 ê°œë¥¼ ì…ë ¥í•˜ì„¸ìš”>> ";
+		cout << "Á¤¼ö 2 °³¸¦ ÀÔ·ÂÇÏ¼¼¿ä(0ÀÔ·Â½Ã Á¾·á)>> ";
 		cin >> a >> b;
-	}
+}
 protected:
 	int a, b;
-	virtual int calc(int a, int b) = 0; // ë‘ ì •ìˆ˜ì˜ í•© ë¦¬í„´
+	virtual int calc(int a, int b) = 0; // µÎ Á¤¼öÀÇ ÇÕ ¸®ÅÏ
 public:
 	void run() {
 		input();
-		cout << "ê³„ì‚°ëœ ê°’ì€ " << calc(a, b) << endl;
+		cout << "°è»êµÈ °ªÀº " << calc(a, b) << endl;
 	}
 };
 
 class Adder : public Calculator {
 protected:
-	int calc(int a, int b) { // ìˆœìˆ˜ ê°€ìƒ í•¨ìˆ˜ êµ¬í˜„
+	int calc(int a, int b) { // ¼ø¼ö °¡»ó ÇÔ¼ö ±¸Çö
 		return a + b;
 	}
 };
 
 class Subtractor : public Calculator {
 protected:
-	int calc(int a, int b) { // ìˆœìˆ˜ ê°€ìƒ í•¨ìˆ˜ êµ¬í˜„
+	int calc(int a, int b) { // ¼ø¼ö °¡»ó ÇÔ¼ö ±¸Çö
 		return a - b;
 	}
 };

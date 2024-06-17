@@ -35,13 +35,13 @@ bool ColorPoint::equals(ColorPoint p) {
 int main() {
 	Point p;	// 기본 클래스의 객체 생성
 	p.set(2,3);										// ②
-	p.x = 5;										// ③
-	p.y = 5;										// ④
+	// p.x = 5;										// ③
+	// p.y = 5;										// ④
 	p.showPoint();
 
 	ColorPoint cp; // 파생 클래스의 객체 생성
-	cp.x = 10;										// ⑤
-	cp.y = 10;										// ⑥
+	// cp.x = 10;										// ⑤
+	// cp.y = 10;										// ⑥
 	cp.set(3,4);
 	cp.setColor("Red");
 
